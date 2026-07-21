@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT: your name in the browser tab -->
+  <title>Hamidreza Akef</title>
+  <style>
+    :root {
+      --accent: #bf5700;      /* UT Austin burnt orange — change to any color you like */
+      --text: #1a1a1a;
+      --muted: #666;
+      --bg: #ffffff;
+      --card: #f7f7f7;
+      --border: #e5e5e5;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px; }
+    header { margin-bottom: 48px; }
+    h1 { font-size: 2.4rem; letter-spacing: -0.02em; margin-bottom: 6px; }
+    .tagline { color: var(--muted); font-size: 1.1rem; }
+    .accent-bar { width: 56px; height: 4px; background: var(--accent); border-radius: 2px; margin: 20px 0 0; }
+    section { margin-bottom: 44px; }
+    h2 {
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--accent); margin-bottom: 16px; font-weight: 700;
+    }
+    p { margin-bottom: 14px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .links { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; }
+    .links li a {
+      display: inline-block; padding: 8px 16px; border: 1px solid var(--border);
+      border-radius: 8px; color: var(--text); font-size: 0.95rem; transition: all 0.15s;
+    }
+    .links li a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+    .files { list-style: none; }
+    .files li {
+      background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+      padding: 14px 18px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;
+    }
+    .files .file-name { font-weight: 600; }
+    .files .file-desc { color: var(--muted); font-size: 0.9rem; }
+    .btn {
+      display: inline-block; padding: 10px 20px; background: var(--accent); color: #fff;
+      border-radius: 8px; font-weight: 600; font-size: 0.95rem;
+    }
+    .btn:hover { opacity: 0.9; text-decoration: none; }
+    footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+    @media (max-width: 480px) {
+      .wrap { padding: 40px 20px; }
+      h1 { font-size: 1.9rem; }
+      .files li { flex-direction: column; align-items: flex-start; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- ===================== HEADER ===================== -->
+    <header>
+      <!-- EDIT: your name -->
+      <h1>Hamidreza Akef</h1>
+      <!-- EDIT: your role / department / university -->
+      <p class="tagline">Graduate Student, The University of Texas at Austin</p>
+      <div class="accent-bar"></div>
+    </header>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section>
+      <h2>About</h2>
+      <!-- EDIT: 2-3 sentences about your research interests and background -->
+      <p>
+        I'm a PhD student in Electrical and Computer Engineering at The University of Texas at Austin, advised by David Soloveichik. My research lies at the intersection of molecular programming and DNA computing, where I study the fundamental capabilities and limitations of programmable molecular systems. More broadly, I'm interested in developing mathematical frameworks for engineering biomolecular computation and exploring their potential applications in synthetic biology and RNA networks.
+
+        Before joining UT Austin, I earned my BSc from the University of Tehran, where I was recognized in Iran's National Mechanics Olympiad. Along the way, I've worked on projects spanning robotics, cognitive science, and molecular computation, and have served as a teaching assistant at both UT Austin and the University of Tehran.
+
+        Beyond research, I'm interested in entrepreneurship, translational science, psychology, hiking, and music.
+
+      </p>
+    </section>
+
+    <!-- ===================== RESUME ===================== -->
+    <section>
+      <h2>Resume</h2>
+      <p>
+        <!-- Upload resume.pdf to the same repo, then this link works automatically -->
+        <a class="btn" href="resume.pdf" target="_blank">Download my resume (PDF)</a>
+      </p>
+    </section>
+
+    <!-- ===================== SHARED FILES ===================== -->
+    <section>
+      <h2>Files &amp; Links</h2>
+      <p>Documents and resources I share publicly. Each links to a file in this site.</p>
+      <ul class="files">
+        <!-- EDIT: duplicate a <li> block for each file you upload -->
+        <li>
+          <div>
+            <div class="file-name"><a href="paper-draft.pdf" target="_blank">Working Paper (Draft)</a></div>
+            <div class="file-desc">Short description of the file</div>
+          </div>
+          <a href="paper-draft.pdf" target="_blank">Open &rarr;</a>
+        </li>
+        <li>
+          <div>
+            <div class="file-name"><a href="slides.pdf" target="_blank">Presentation Slides</a></div>
+            <div class="file-desc">Short description of the file</div>
+          </div>
+          <a href="slides.pdf" target="_blank">Open &rarr;</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section>
+      <h2>Contact</h2>
+      <ul class="links">
+        <!-- EDIT: update or remove any of these -->
+        <li><a href="mailto:hakef@utexas.edu">Email</a></li>
+        <!-- <li><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></li> -->
+        <li><a href="www.linkedin.com/in/hamidreza-akef/" target="_blank">LinkedIn</a></li>
+        <!-- <li><a href="https://github.com/" target="_blank">GitHub</a></li> -->
+      </ul>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+      <!-- EDIT: update year/name -->
+      &copy; 2026 Hamidreza Akef · Hosted on GitHub Pages
+    </footer>
+
+  </div>
+</body>
+</html>
