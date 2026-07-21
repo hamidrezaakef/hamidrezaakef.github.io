@@ -66,12 +66,22 @@
 
     <!-- ===================== HEADER ===================== -->
     <header>
+      <img src="personal_photo.jpg" alt="Hamidreza Akef" class="headshot">
       <!-- EDIT: your name -->
       <h1>Hamidreza Akef</h1>
       <!-- EDIT: your role / department / university -->
       <p class="tagline">Graduate Student, The University of Texas at Austin</p>
       <div class="accent-bar"></div>
     </header>
+
+    .headshot {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;      /* circle; remove this line for a square */
+      object-fit: cover;       /* crops nicely, no stretching */
+      margin-bottom: 20px;
+      border: 3px solid var(--accent);
+    }
 
     <!-- ===================== ABOUT ===================== -->
     <section>
